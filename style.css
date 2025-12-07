@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-side {
+    flex: 1;
+    background: linear-gradient(135deg, #111, #333);
+    color: #FFD700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.left-side h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.left-side p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #222;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+}
+
+form h2 {
+    text-align: center;
+    color: #bfa82b;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #bfa82b;
+    box-shadow: 0 0 5px rgba(191,168,43,0.5);
+    outline: none;
+    background-color: #fff;
+    color: #000;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg,#bfa82b,#000);
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.signup-btn:hover {
+    background: linear-gradient(90deg,#000,#bfa82b);
+}
+
+.toggle-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.toggle-link a {
+    color: #bfa82b;
+    text-decoration: none;
+}
+
+.toggle-link a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}

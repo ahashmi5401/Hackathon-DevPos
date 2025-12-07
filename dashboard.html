@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MVHS Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MVHS ClubConnect Dashboard</h1>
+      <div>
+        <span id="greeting"></span>
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </header>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">MVHS Dashboard</div>
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul id="navbar">
+          <li data-section="home" class="active">Home</li>
+          <li data-section="analytics">Analytics</li>
+          <li data-section="clubs">Clubs</li>
+          <li data-section="events">Events</li>
+          <li data-section="homework">Homework</li>
+          <li data-section="contacts">Contacts</li>
+        </ul>
+      </div>
+    </nav>
+
+    <main id="content"></main>
+
+    <!-- AI Chatbot -->
+    <div id="aiChatbot" class="floating-chat hidden">💬</div>
+    <div id="chatModal" class="chat-modal hidden">
+      <div class="chat-header">
+        <span>Homework AI Helper</span>
+        <button id="closeChat">X</button>
+      </div>
+      <div class="chat-body" id="chatBody"></div>
+      <div class="chat-footer">
+        <input
+          type="text"
+          id="chatQuestion"
+          placeholder="Ask for homework help..."
+        />
+        <button id="sendChat">Send</button>
+      </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>
